@@ -1,0 +1,7 @@
+.navColor {
+    color: black;
+    font-weight:bold;
+}
+.navColor:hover {
+    color: red;
+}
