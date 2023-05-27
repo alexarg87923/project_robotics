@@ -1,7 +1,7 @@
 import React from 'react';
 
 function AboutBody() {
-  return (<></>);
+  return <></>;
 }
 
 export default AboutBody;
