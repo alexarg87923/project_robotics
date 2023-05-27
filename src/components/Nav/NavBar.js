@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Navbar, Container, Nav, Row, Col} from 'react-bootstrap/';
+import { Button, Navbar, Container, Nav, Row, Col } from 'react-bootstrap/';
 import './NavBar.css';
 
 function NavBar() {
@@ -17,30 +17,30 @@ function NavBar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-        <Nav
-          className="justify-content-center w-100 mb-2 mb-lg-0"
-          style={{ maxHeight: '100px' }}
-          navbarScroll
-        >
-          <Row className="w-100">
-            <Col className="d-flex justify-content-center">
-              <Nav.Link href="/about" className="mx-5 px-4 py-1 navColor">
-                About
-              </Nav.Link>
-            </Col>
-            <Col className="d-flex justify-content-center">
-              <Nav.Link href="/submit" className="mx-5 px-4 py-1 navColor">
-                Submit
-              </Nav.Link>
-            </Col>
-          </Row>
-        </Nav>
+          <Nav
+            className="justify-content-center w-100 mb-2 mb-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            <Row className="w-100">
+              <Col className="d-flex justify-content-center">
+                <Nav.Link href="/about" className="mx-5 px-4 py-1 navColor">
+                  About
+                </Nav.Link>
+              </Col>
+              <Col className="d-flex justify-content-center">
+                <Nav.Link href="/submit" className="mx-5 px-4 py-1 navColor">
+                  Submit
+                </Nav.Link>
+              </Col>
+            </Row>
+          </Nav>
           <Button
             className="me-5 px-5 mt-1 ms-5 text-nowrap"
             variant="outline-success"
             href="/sign-up"
           >
-            Sign Up 
+            Sign Up
           </Button>
         </Navbar.Collapse>
       </Container>
