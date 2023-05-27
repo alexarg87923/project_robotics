@@ -38,11 +38,11 @@ function NavBar() {
                   Contact
                 </Nav.Link>
               </Col>
-              {/* <Col className="d-flex justify-content-center">
+              <Col className="d-flex justify-content-center">
                 <Nav.Link href="/submit" className="mx-5 px-4 py-1 navColor">
                   Submit
                 </Nav.Link>
-              </Col> */}
+              </Col>
             </Row>
           </Nav>
           <Button

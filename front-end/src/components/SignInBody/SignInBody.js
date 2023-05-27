@@ -9,7 +9,7 @@ function SignIn() {
           <form>
             <img
               className="mb-4"
-              src="bootstrap-logo.svg"
+              src="assets/icons/bootstrap-logo.svg"
               alt=""
               width="72"
               height="57"

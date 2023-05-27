@@ -129,7 +129,7 @@ const ContactForm = () => {
           </Alert>
 
           <Button variant="primary" size="lg" type="submit">
-            Send
+            Submit
           </Button>
         </Form>
       </Col>

@@ -29,7 +29,7 @@ function Video() {
           <img
             id="thumbnail"
             ref={thumbnailRef}
-            src="promo-bg.jpg"
+            src="assets/images/promo-bg.jpg"
             alt="Promo Thumbnail"
           />
           <video
@@ -38,9 +38,9 @@ function Video() {
             preload="auto"
             muted
             loop
-            poster="promo-bg.jpg"
+            poster="assets/images/promo-bg.jpg"
           >
-            <source src="vid.mp4" type="video/mp4" />
+            <source src="assets/videos/vid.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
