@@ -1,20 +1,20 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import NavBar from '../../components/Nav/NavBar';
 import Footer from '../../components/Footer/Footer';
-import SignUp from '../../components/SignUp/SignUp';
+import SignUpBody from '../../components/SignUpBody/SignUpBody';
 
-function Join() {
+function SignUp() {
   return (
     <div>
       <Helmet>
         <title>Sign Up</title>
       </Helmet>
       <NavBar />
-      <SignUp />
+      <SignUpBody />
       <Footer />
     </div>
   );
 }
 
-export default Join;
+export default SignUp;

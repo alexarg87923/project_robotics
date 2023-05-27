@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Button, Navbar, Container, Nav, Row, Col } from 'react-bootstrap/';
-import { Wrapper } from './SignUpStyles';
+import { Wrapper } from './SignUpBodyStyles';
 
 function SignUp() {
   const divStyle = {

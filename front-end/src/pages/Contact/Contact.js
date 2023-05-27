@@ -4,16 +4,16 @@ import { Helmet } from 'react-helmet-async';
 import NavBar from '../../components/Nav/NavBar';
 import Footer from '../../components/Footer/Footer';
 
-function Landing() {
+function Contact() {
   return (
-    <div>
+    <>
       <Helmet>
-        <title>Home</title>
+        <title>Contact</title>
       </Helmet>
       <NavBar />
       <Footer />
-    </div>
+    </>
   );
 }
 
-export default Landing;
+export default Contact;

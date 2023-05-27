@@ -29,10 +29,20 @@ function NavBar() {
                 </Nav.Link>
               </Col>
               <Col className="d-flex justify-content-center">
+                <Nav.Link href="/sign-in" className="mx-5 px-4 py-1 navColor">
+                  Sign In
+                </Nav.Link>
+              </Col>
+              <Col className="d-flex justify-content-center">
+                <Nav.Link href="/contact" className="mx-5 px-4 py-1 navColor">
+                  Contact
+                </Nav.Link>
+              </Col>
+              {/* <Col className="d-flex justify-content-center">
                 <Nav.Link href="/submit" className="mx-5 px-4 py-1 navColor">
                   Submit
                 </Nav.Link>
-              </Col>
+              </Col> */}
             </Row>
           </Nav>
           <Button

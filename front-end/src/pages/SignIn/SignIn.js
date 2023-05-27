@@ -3,17 +3,19 @@ import { Helmet } from 'react-helmet-async';
 
 import NavBar from '../../components/Nav/NavBar';
 import Footer from '../../components/Footer/Footer';
+import SignInBody from '../../components/SignInBody/SignInBody.js';
 
-function Landing() {
+function SignIn() {
   return (
-    <div>
+    <>
       <Helmet>
-        <title>Home</title>
+        <title>Sign In</title>
       </Helmet>
       <NavBar />
+      <SignInBody />
       <Footer />
-    </div>
+    </>
   );
 }
 
-export default Landing;
+export default SignIn;

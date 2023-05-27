@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import NavBar from '../../components/Nav/NavBar';
 import Footer from '../../components/Footer/Footer';
 
@@ -10,7 +10,6 @@ function About() {
         <title>About</title>
       </Helmet>
       <NavBar />
-
       <Footer />
     </div>
   );
