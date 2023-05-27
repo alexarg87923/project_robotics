@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 
 import NavBar from '../../components/Nav/NavBar';
 import Footer from '../../components/Footer/Footer';
+import Video from '../../components/Video/Video';
 
 function Landing() {
   return (
@@ -11,6 +12,7 @@ function Landing() {
         <title>Home</title>
       </Helmet>
       <NavBar />
+      <Video />
       <Footer />
     </div>
   );
