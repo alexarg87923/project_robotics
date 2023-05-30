@@ -1,5 +1,4 @@
-import React from 'react';
-// import { Button, Navbar, Container, Nav, Row, Col } from 'react-bootstrap/';
+import React, { useState } from 'react';
 import { Wrapper } from './SignUpBodyStyles';
 
 function SignUp() {
@@ -18,6 +17,36 @@ function SignUp() {
   const pStyle = {
     color: 'hsl(218, 81%, 85%)'
   };
+
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.value });
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch('/api/v1/sign-up', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+        console.log("Response successful!");
+    } else {
+        console.error("An error occurred.");
+    }
+}
+
   return (
     <Wrapper>
       <section className="background-radial-gradient overflow-hidden">
@@ -53,7 +82,7 @@ function SignUp() {
 
               <div className="card bg-glass">
                 <div className="card-body px-4 py-5 px-md-5">
-                  <form>
+                  <form onSubmit={handleSubmit}>
                     <div className="row">
                       <div className="col-md-6 mb-4">
                         <div className="form-outline">
@@ -61,6 +90,9 @@ function SignUp() {
                             type="text"
                             id="form3Example1"
                             className="form-control"
+                            name="firstName"
+                            value={formData.firstName}
+                            onChange={handleChange}
                           />
                           <label className="form-label" htmlFor="form3Example1">
                             First name
@@ -73,6 +105,9 @@ function SignUp() {
                             type="text"
                             id="form3Example2"
                             className="form-control"
+                            name="lastName"
+                            value={formData.lastName}
+                            onChange={handleChange}
                           />
                           <label className="form-label" htmlFor="form3Example2">
                             Last name
@@ -85,6 +120,9 @@ function SignUp() {
                         type="email"
                         id="form3Example3"
                         className="form-control"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                       />
                       <label className="form-label" htmlFor="form3Example3">
                         Email address
@@ -95,6 +133,9 @@ function SignUp() {
                         type="password"
                         id="form3Example4"
                         className="form-control"
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
                       />
                       <label className="form-label" htmlFor="form3Example4">
                         Password
