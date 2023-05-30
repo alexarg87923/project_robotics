@@ -69,7 +69,6 @@ function SignUp() {
                 what you'll create!
               </p>
             </div>
-
             <div className="col-lg-6 mb-5 mb-lg-0 position-relative">
               <div
                 id="radius-shape-1"
@@ -79,7 +78,6 @@ function SignUp() {
                 id="radius-shape-2"
                 className="position-absolute shadow-5-strong"
               ></div>
-
               <div className="card bg-glass">
                 <div className="card-body px-4 py-5 px-md-5">
                   <form onSubmit={handleSubmit}>
