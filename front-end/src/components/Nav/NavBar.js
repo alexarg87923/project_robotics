@@ -7,13 +7,13 @@ function NavBar() {
     <Navbar className="ps-5 border-bottom border-light" expand="lg">
       <Container fluid>
         <Navbar.Brand href="/">
-          {/* <img
+          <img
             src=""
             width="200"
             height="auto"
             className="d-inline-block align-top"
             alt=""
-          /> */}
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -38,16 +38,16 @@ function NavBar() {
                   Contact
                 </Nav.Link>
               </Col>
-              <Col className="d-flex justify-content-center">
+              {/* <Col className="d-flex justify-content-center">
                 <Nav.Link href="/submit" className="mx-5 px-4 py-1 navColor">
                   Submit
                 </Nav.Link>
-              </Col>
+              </Col> */}
             </Row>
           </Nav>
           <Button
             className="me-5 px-5 mt-1 ms-5 text-nowrap"
-            variant="outline-success"
+            variant="success"
             href="/sign-up"
           >
             Sign Up
