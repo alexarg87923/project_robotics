@@ -38,7 +38,7 @@ function SignIn() {
             <button className="w-100 btn btn-lg btn-primary" type="submit">
               Sign in
             </button>
-            <p className="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
+            <p className="mt-5 mb-3 text-body-secondary">&copy; 2017-2023</p>
           </form>
         </main>
       </div>
