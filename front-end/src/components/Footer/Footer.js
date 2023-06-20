@@ -1,9 +1,10 @@
 import React from 'react';
 import './Footer.css';
+import { BootstrapWrapper } from '../BootstrapWrapper/BootstrapWrapper';
 
 function Footer() {
   return (
-    <>
+    <BootstrapWrapper>
       <svg xmlns="http://www.w3.org/2000/svg" style={{ display: 'none' }}>
         <symbol id="bootstrap" viewBox="0 0 118 94">
           <title>Bootstrap</title>
@@ -64,7 +65,7 @@ function Footer() {
           </ul>
         </footer>
       </div>
-    </>
+    </BootstrapWrapper>
   );
 }
 

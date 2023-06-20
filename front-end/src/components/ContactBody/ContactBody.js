@@ -1,5 +1,8 @@
+/* eslint-disable */
 import React, { useState } from 'react';
-import { Form, Button, FloatingLabel, Row, Col, Alert } from 'react-bootstrap';
+import { Form, Button, FloatingLabel, Row, Col, Alert, Container } from 'react-bootstrap';
+import { Wrapper } from './ContactBodyStyles';
+import { BootstrapWrapper } from '../BootstrapWrapper/BootstrapWrapper';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -44,96 +47,72 @@ const ContactForm = () => {
   };
 
   return (
-    <Row className="justify-content-center mt-5">
-      <Col lg={8} xl={7} className="mt-5">
-        <Form noValidate onSubmit={handleSubmit}>
-          <FloatingLabel controlId="name" label="Full name" className="mb-3">
-            <Form.Control
-              type="text"
-              placeholder="Enter your name..."
-              value={formData.name}
-              name="name"
-              onChange={e => onInputChange(e)}
-              isInvalid={invalid.name}
-            />
-            <Form.Control.Feedback type="invalid">
-              A name is required.
-            </Form.Control.Feedback>
-          </FloatingLabel>
+    <BootstrapWrapper>
+        <Wrapper>
+        <Row className="justify-content-center">
+            <h1 className='header text-center text-uppercase'>Contact</h1>
+            <Col lg={6} xl={6} className="mt-5 text-center">
+                <h1 className="second_header">Let's Talk</h1>
+                <div className="hr-container">
+                    <hr className="short-hr"></hr>
+                </div>
+                <Container>
+                <Row>
+                    <Col md={{ span: 6, offset: 3 }} className="text-start">
+                    <p className="text-white text-14">
+                        <strong>Felipe Rodas</strong>
+                    </p>
+                    <p className="text-white text-14">AI &amp; Robotics Club President</p>
+                    <p className="text-white text-14">
+                        <a href="mailto:felipe.rodas001@mymdc.net" className="text-white">
+                        felipe.rodas001@mymdc.net
+                        </a>
+                    </p>
+                    <p className="text-white text-14">(786) 329-2625</p>
+                    <p className="text-white text-14">
+                        <span></span>
+                    </p>
 
-          <FloatingLabel
-            controlId="email"
-            label="Email address"
-            className="mb-3"
-          >
-            <Form.Control
-              type="email"
-              placeholder="name@example.com"
-              name="email"
-              value={formData.email}
-              onChange={e => onInputChange(e)}
-              isInvalid={invalid.email}
-            />
-            <Form.Control.Feedback type="invalid">
-              An email is required.
-            </Form.Control.Feedback>
-          </FloatingLabel>
+                    <p className="text-white text-14 mt-5">
+                        <strong>Mauricio Pereira</strong>
+                    </p>
+                    <p className="text-white text-14">AI &amp; Robotics Club Vice President</p>
+                    <p className="text-white text-14">
+                        <a
+                        href="mailto:mauricio.pereira001@mymdc.net"
+                        className="text-white"
+                        >
+                        mauricio.pereira001@mymdc.net
+                        </a>
+                    </p>
+                    <p className="text-white text-14">(954) 534-0176</p>
+                    </Col>
+                </Row>
+                </Container>
+            </Col>
 
-          <FloatingLabel
-            controlId="phone"
-            label="Phone number"
-            className="mb-3"
-          >
-            <Form.Control
-              type="tel"
-              placeholder="(123) 456-7890"
-              name="phone"
-              value={formData.phone}
-              onChange={e => onInputChange(e)}
-              isInvalid={invalid.phone}
-            />
-            <Form.Control.Feedback type="invalid">
-              A phone number is required.
-            </Form.Control.Feedback>
-          </FloatingLabel>
-
-          <FloatingLabel controlId="message" label="Message" className="mb-3">
-            <Form.Control
-              as="textarea"
-              placeholder="Enter your message here..."
-              style={{ height: '10rem' }}
-              value={formData.message}
-              onChange={e => onInputChange(e)}
-              name="message"
-              isInvalid={invalid.message}
-            />
-            <Form.Control.Feedback type="invalid">
-              A message is required.
-            </Form.Control.Feedback>
-          </FloatingLabel>
-
-          <Alert
-            variant="success"
-            id="submitSuccessMessage"
-            className={showSuccess ? 'text-center mb-3' : 'd-none'}
-          >
-            <div className="fw-bolder">Form submission successful!</div>
-          </Alert>
-
-          <Alert
-            variant="danger"
-            id="submitErrorMessage"
-            className={showError ? 'text-center mb-3' : 'd-none'}
-          >
-            Error sending message!
-          </Alert>
-
-          <Button variant="primary" size="lg" type="submit">
-            Submit
-          </Button>
-        </Form>
-      </Col>
-    </Row>
+            <Col lg={6} xl={6} className="mt-5 text-center">
+                <h1 className="second_header">You can also leave a message</h1>
+                <div className="hr-container">
+                    <hr className="short-hr"></hr>
+                </div>
+                <div className='container'>
+                    <Form onSubmit={handleSubmit}>
+                        <Form.Control className="mb-4 custom-input" placeholder="Name" />
+                        <Form.Control className="mb-4 custom-input" placeholder="Email" />
+                        <Form.Control className="mb-4 custom-input" placeholder="Subject" />
+                        <Form.Control
+                            as="textarea"
+                            className="mb-4 custom-textarea"
+                            placeholder="Message"
+                        />
+                        <Button className="float-right ms-auto">Submit</Button>
+                    </Form>
+                </div>
+            </Col>
+            </Row>
+        </Wrapper>
+    </BootstrapWrapper>
   );
 };
 

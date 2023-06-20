@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import NavBar from '../../components/Nav/NavBar';
-import Footer from '../../components/Footer/Footer';
+import AboutBody from '../../components/About/AboutBody';
 
 function About() {
   return (
@@ -9,8 +8,7 @@ function About() {
       <Helmet>
         <title>About</title>
       </Helmet>
-      <NavBar />
-      <Footer />
+      <AboutBody />
     </div>
   );
 }

@@ -25,27 +25,27 @@ function SignUp() {
     password: ''
   });
 
-  const handleChange = (e) => {
-    setFormData({...formData, [e.target.name]: e.target.value });
-  }
+  const handleChange = e => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async e => {
     e.preventDefault();
 
     const response = await fetch('/api/v1/sign-up', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
     });
 
     if (response.ok) {
-        console.log("Response successful!");
+      console.log('Response successful!');
     } else {
-        console.error("An error occurred.");
+      console.error('An error occurred.');
     }
-}
+  };
 
   return (
     <Wrapper>

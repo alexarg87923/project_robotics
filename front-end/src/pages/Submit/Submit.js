@@ -1,20 +1,17 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import NavBar from '../../components/Nav/NavBar';
-import Footer from '../../components/Footer/Footer';
 import SubmitBody from '../../components/SubmitBody/SubmitBody';
+import { BootstrapWrapper } from '../../components/BootstrapWrapper/BootstrapWrapper';
 
 function Submit() {
   return (
-    <>
+    <BootstrapWrapper>
       <Helmet>
         <title>Submit</title>
       </Helmet>
-      <NavBar />
       <SubmitBody />
-      <Footer />
-    </>
+    </BootstrapWrapper>
   );
 }
 
