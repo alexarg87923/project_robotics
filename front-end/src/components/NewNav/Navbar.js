@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import { Wrapper } from './CustomCSS';
-import './Navbar.css';
+import { Button } from './Button';
+import { Wrapper } from './NavBarStyle';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -21,20 +23,26 @@ function Navbar() {
 
   useEffect(() => {
     showButton();
-  }, []);
 
-  window.addEventListener('resize', showButton);
+    window.addEventListener('resize', showButton);
+
+    return () => {
+      window.removeEventListener('resize', showButton);
+    };
+  }, []);
 
   return (
     <Wrapper>
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            TomatoCock
-            <i className="fab fa-typo3" />
+            Tomatonator
           </Link>
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            <FontAwesomeIcon
+              icon={click ? faTimes : faBars}
+              style={{ color: 'white' }}
+            />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">

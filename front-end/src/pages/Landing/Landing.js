@@ -1,8 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-
-// import Video from '../../components/Video/Video';
-// import MoreInfo from '../../components/MoreInfo/MoreInfoBody';
+import Title from '../../components/Title/Title';
+import CleanVideo from '../../components/CleanVideo/CleanVideo';
 
 function Landing() {
   return (
@@ -12,15 +11,15 @@ function Landing() {
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
         backgroundSize: 'cover',
-        height: '100vh',
+        height: 'auto',
         width: 'auto'
       }}
     >
       <Helmet>
         <title>Home</title>
       </Helmet>
-      {/* <Video /> */}
-      {/* <MoreInfo /> */}
+      <Title />
+      <CleanVideo />
     </div>
   );
 }

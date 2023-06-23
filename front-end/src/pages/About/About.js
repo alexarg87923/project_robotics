@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import AboutBody from '../../components/About/AboutBody';
+import AboutBody from '../../components/AboutBody/AboutBody';
 
 function About() {
   return (
