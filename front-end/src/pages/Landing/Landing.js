@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Title from '../../components/Title/Title';
 import CleanVideo from '../../components/CleanVideo/CleanVideo';
+import Banner from '../../components/Banner/Banner';
 
 function Landing() {
   return (
@@ -20,6 +21,7 @@ function Landing() {
       </Helmet>
       <Title />
       <CleanVideo />
+      <Banner />
     </div>
   );
 }

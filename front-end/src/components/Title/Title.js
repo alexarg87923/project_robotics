@@ -3,11 +3,11 @@ import { BootstrapWrapper } from '../BootstrapWrapper/BootstrapWrapper';
 import { Wrapper } from './TitleStyle';
 import { Card, Row, Col } from 'react-bootstrap';
 
-function Navbar() {
+function Title() {
   return (
     <Wrapper>
       <BootstrapWrapper>
-        <div className="padding">
+        <div className="padding d-flex justify-content-center">
           <Card className="rounded-rectangle mx-5">
             <Card.Body>
               <Col className="text-center">
@@ -26,4 +26,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Title;

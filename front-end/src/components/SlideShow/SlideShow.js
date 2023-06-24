@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { BootstrapWrapper } from '../BootstrapWrapper/BootstrapWrapper';
 
-function AboutBody() {
+function Slideshow() {
   return (
     <BootstrapWrapper>
       <Carousel>
@@ -46,4 +46,4 @@ function AboutBody() {
   );
 }
 
-export default AboutBody;
+export default Slideshow;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import AboutBody from '../../components/AboutBody/AboutBody';
+import AboutPage from '../../components/About/About';
 
 function About() {
   return (
@@ -8,7 +8,7 @@ function About() {
       <Helmet>
         <title>About</title>
       </Helmet>
-      <AboutBody />
+      <AboutPage />
     </div>
   );
 }

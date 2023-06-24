@@ -1,7 +1,7 @@
 import React from 'react';
 import { Wrapper } from './MoreInfoBodyStyles';
 
-function AboutBody() {
+function MoreInfo() {
   return (
     <Wrapper>
       <section className="featured-section">
@@ -29,4 +29,4 @@ function AboutBody() {
   );
 }
 
-export default AboutBody;
+export default MoreInfo;

@@ -56,7 +56,7 @@ const ContactForm = () => {
                 <div className="hr-container">
                     <hr className="short-hr"></hr>
                 </div>
-                <Container>
+                <Container className="info">
                 <Row>
                     <Col md={{ span: 6, offset: 3 }} className="text-start">
                     <p className="text-white text-14">

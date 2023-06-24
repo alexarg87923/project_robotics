@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   .rounded-rectangle {
-    width: auto;
+    width: 60vw;
     height: 50vh;
     background-color: rgba(139, 0, 0, 0.63);
     border-radius: 10vh;
@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
   }
 
   .padding {
-    padding-top: 10vh;
+    padding-top: 20vh;
   }
 
   .subtitle-row {
@@ -45,10 +45,18 @@ export const Wrapper = styled.div`
     height: 100%;
   }
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .title {
-      font-size: 16vw;
+      font-size: 14vw;
     }
+    .rounded-rectangle {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      height: 30vh;
+      width: 90vw;
+      border-radius: 5vh;
+    }
+
     .subtitle {
       font-size: 7vw;
     }

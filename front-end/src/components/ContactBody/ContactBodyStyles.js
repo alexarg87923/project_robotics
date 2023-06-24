@@ -89,4 +89,10 @@ export const Wrapper = styled.div`
     font-size: 14px;
     line-height: 5px;
   }
+
+  @media screen and (max-width: 768px) {
+    .info {
+      margin-left: 22vw;
+    }
+  }
 `;

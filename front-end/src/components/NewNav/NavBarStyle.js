@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     box-sizing: border-box;
     margin: 0;
     font-family: 'PT Sans', sans-serif;
+    color: red !important;
   }
 
   .navbar {
@@ -72,7 +73,7 @@ export const Wrapper = styled.div`
   }
 
   .nav-links:hover {
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid red;
     transition: all 0.2s ease-out;
   }
 
