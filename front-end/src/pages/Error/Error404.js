@@ -5,16 +5,16 @@ import { Card, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { BootstrapWrapper } from '../../components/BootstrapWrapper/BootstrapWrapper';
+import { BootstrapWrapper } from '../../components/common/BootstrapWrapper/BootstrapWrapper';
 
 function Error404() {
   return (
     <BootstrapWrapper>
       <Helmet>
-        <title>404</title>
+        <title>Error!</title>
       </Helmet>
 
-      <Row className="flex-center justify-content-center py-6">
+      <Row className="flex-center justify-content-center py-6 mt-5">
         <Col sm={11} md={9} lg={7} xl={6} className="col-xxl-5">
             <Card className="text-center mt-5">
             <Card.Body className="p-5">

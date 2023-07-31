@@ -1,8 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import SignUpBody from '../../components/SignUpBody/SignUpBody';
-import { BootstrapWrapper } from '../../components/BootstrapWrapper/BootstrapWrapper';
+import { BootstrapWrapper } from '../../components/common/BootstrapWrapper/BootstrapWrapper';
 
 function SignUp() {
   return (
@@ -10,7 +9,6 @@ function SignUp() {
       <Helmet>
         <title>Sign Up</title>
       </Helmet>
-      <SignUpBody />
     </BootstrapWrapper>
   );
 }

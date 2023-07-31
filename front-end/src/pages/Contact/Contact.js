@@ -1,8 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-
-import ContactBody from '../../components/ContactBody/ContactBody';
-import { BootstrapWrapper } from '../../components/BootstrapWrapper/BootstrapWrapper';
+import { BootstrapWrapper } from '../../components/common/BootstrapWrapper/BootstrapWrapper';
 
 function Contact() {
   return (
@@ -10,19 +8,6 @@ function Contact() {
       <Helmet>
         <title>Contact</title>
       </Helmet>
-      <div
-        style={{
-          backgroundImage: `url(assets/images/contact.webp)`,
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed',
-          backgroundSize: 'cover',
-          minHeight: '80vh',
-          width: 'auto',
-          overflow: 'hidden'
-        }}
-      >
-        <ContactBody />
-      </div>
     </BootstrapWrapper>
   );
 }

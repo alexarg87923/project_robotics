@@ -1,15 +1,14 @@
 import React from 'react';
 
-import About from './pages/About/About';
 import Landing from './pages/Landing/Landing';
+import About from './pages/About/About';
 import SignUp from './pages/SignUp/SignUp';
-import Submit from './pages/Submit/Submit';
 import SignIn from './pages/SignIn/SignIn';
 import Contact from './pages/Contact/Contact';
 import Error404 from './pages/Error/Error404';
 
-import Nav from './components/NewNav/Navbar';
-import Footer from './components/Footer/Footer';
+import Nav from './components/common/Nav/Nav';
+import Footer from './components/common/Footer/Footer';
 
 import {
   BrowserRouter as Router,
@@ -31,10 +30,6 @@ function App() {
         <Route exact path="/sign-up" element={<SignUp />} />
         <Route exact path="/sign-in" element={<SignIn />} />
         <Route exact path="/contact" element={<Contact />} />
-
-        {/* Protected Route */}
-        {/* TO DO */}
-        <Route exact path="/submit" element={<Submit />} />
       </Routes>
       <Footer />
     </Router>
