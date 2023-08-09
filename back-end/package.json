@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test":"ping",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
