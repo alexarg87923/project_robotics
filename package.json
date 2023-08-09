@@ -8,7 +8,7 @@
     "install:front-end": "cd front-end/ && npm install",
     "postinstall": "npm run install:back-end && npm run install:front-end",
     "dev": "concurrently -n \"Front-end,Back-end\" -c \"cyan,green\" \"npm start --prefix front-end\" \"npm start --prefix back-end\"",
-  
+    "build": "cd ./front-end && npm run build",
     "start": "cd ./back-end && npm start",
     "heroku-postbuild": "cd ./front-end && npm install && npm run build"
   },
