@@ -9,11 +9,7 @@ export const Wrapper = styled.div`
   }
 
   .navbar {
-    background: linear-gradient(
-      90deg,
-      rgb(28, 27, 27) 0%,
-      rgb(26, 23, 23) 100%
-    );
+    background: rgb(0, 0, 0);
     height: 80px;
     display: flex;
     justify-content: center;

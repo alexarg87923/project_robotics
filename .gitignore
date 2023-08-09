@@ -27,3 +27,4 @@ yarn-error.log*
 .vscode
 
 ._*
+back-end/.env

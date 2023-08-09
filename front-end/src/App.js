@@ -3,7 +3,6 @@ import React from 'react';
 import Landing from './pages/Landing/Landing';
 import About from './pages/About/About';
 import SignUp from './pages/SignUp/SignUp';
-import SignIn from './pages/SignIn/SignIn';
 import Contact from './pages/Contact/Contact';
 import Error404 from './pages/Error/Error404';
 
@@ -28,7 +27,6 @@ function App() {
         <Route exact path="/" element={<Landing />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/sign-up" element={<SignUp />} />
-        <Route exact path="/sign-in" element={<SignIn />} />
         <Route exact path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

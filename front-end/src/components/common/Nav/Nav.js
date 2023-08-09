@@ -45,7 +45,7 @@ function Navbar() {
               />
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                   About us
                 </Link>
@@ -54,7 +54,7 @@ function Navbar() {
                 <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                   Our team
                 </Link>
-              </li>
+              </li> */}
 
               <li>
                 <Link
@@ -67,16 +67,18 @@ function Navbar() {
               </li>
             </ul>
             {button && (
-              <button className="sign-up align-items-center d-flex justify-content-center">
-                SIGN UP{' '}
-                <img
-                  className="arrow-style"
-                  height="auto"
-                  width="42vw"
-                  src={arrow}
-                  alt="Arrow"
-                />
-              </button>
+              <a style={{ textDecoration: 'none' }} href="/sign-up">
+                <button className="sign-up align-items-center d-flex justify-content-center">
+                  SIGN UP
+                  <img
+                    className="arrow-style"
+                    height="auto"
+                    width="42vw"
+                    src={arrow}
+                    alt="Arrow"
+                  />
+                </button>
+              </a>
             )}
           </div>
         </nav>

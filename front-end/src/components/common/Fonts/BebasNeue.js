@@ -10,4 +10,8 @@ export const BebasNeue = styled.div`
   }
 
   font-family: 'BebasNeue';
+
+  .BebasNeue {
+    font-family: 'BebasNeue';
+  }
 `;
