@@ -37,21 +37,23 @@ function Hero() {
                   <p className="text-white text-uppercase m-0 lh-1 subtitle">
                     competition
                   </p>
-                  <button
-                    className=" text-uppercase mt-5 px-4"
-                    onMouseOver={handleMouseOver}
-                    onMouseOut={handleMouseOut}
-                    id="sign-up"
-                  >
-                    sign up
-                    <img
-                      className="arrowstyle"
-                      height="auto"
-                      width="40vw"
-                      src={image}
-                      alt="arrow"
-                    />
-                  </button>
+                  <a style={{ textDecoration: 'none' }} href="/sign-up">
+                    <button
+                      className=" text-uppercase mt-5 px-4"
+                      onMouseOver={handleMouseOver}
+                      onMouseOut={handleMouseOut}
+                      id="sign-up"
+                    >
+                      sign up
+                      <img
+                        className="arrowstyle"
+                        height="auto"
+                        width="40vw"
+                        src={image}
+                        alt="arrow"
+                      />
+                    </button>
+                  </a>
                 </div>
                 <div className="col p-0 justify-content-center align-items-center d-sm-block d-none">
                   <img

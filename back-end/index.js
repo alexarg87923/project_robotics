@@ -3,20 +3,27 @@ const express = require('express')
 const app = express()
 const port = 3001
 const connect_to_db = require('./database/database');
-var cors = require('cors')
+const path = require("path")
 const bodyParser = require('body-parser');
 const sign_up = require('./controllers/sign-up');
 
 // Middlware
-app.use(cors);
-app.use(bodyParser);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(express.json());
 
 // Database
 connect_to_db();
 
+//View
+app.use(express.static(path.join(__dirname, "../front-end", "build")));
+app.use(express.static("public"));
+
 // Routes
 app.use(sign_up);
+app.use((req, res, next) => {
+  res.sendFile(path.join(__dirname, "../front-end", "build", "index.html"));
+});
 
 // Listening
 app.listen(port, () => {

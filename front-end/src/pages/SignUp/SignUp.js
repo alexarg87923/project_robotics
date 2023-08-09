@@ -19,9 +19,8 @@ function SignUp() {
       return;
     }
 
-    // Assuming you want to send this data to a backend server
     try {
-      const response = await axios.post('/api/signup', {
+      const response = await axios.post('/api/v1/sign-up', {
         name,
         lastName,
         email

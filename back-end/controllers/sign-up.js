@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-const { User } = require('../models/sign-up');
+const User = require('../models/sign-up');
 
 router.post('/api/v1/sign-up', (req, res, next) => {
-    const { email, firstName, lastName } = req.body;
+    const { email, name, lastName } = req.body;
 
-    const user = new User({ email, firstName, lastName });
+    const user = new User({ email, name, lastName });
 
     user.save()
         .then(() => {

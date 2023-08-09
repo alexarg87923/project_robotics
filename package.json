@@ -9,6 +9,9 @@
     "postinstall": "npm run install:back-end && npm run install:front-end",
     "start": "concurrently -n \"Front-end,Back-end\" -c \"cyan,green\" \"npm start --prefix front-end\" \"npm start --prefix back-end\""
   },
+  "engines": {
+    "node":"18.x"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
