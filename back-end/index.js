@@ -15,7 +15,7 @@ app.use(express.json());
 // Database
 connect_to_db();
 
-//View
+// Views
 app.use(express.static(path.join(__dirname, "../front-end", "build")));
 app.use(express.static("public"));
 

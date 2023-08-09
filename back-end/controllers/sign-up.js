@@ -10,11 +10,11 @@ router.post('/api/v1/sign-up', (req, res, next) => {
 
     user.save()
         .then(() => {
-            res.status(200).json();
+            return res.status(200).json();
         })
         .catch((err) => {
             console.error(err);
-            res.status(500).json({ 
+            return res.status(500).json({ 
                 error: "An error occurred while trying to create a user." 
             });
         });

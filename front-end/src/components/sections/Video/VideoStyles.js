@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
     font-size: 2rem; //2vw
   }
   .vid {
-    width: auto;
+    width: 40rem;
     height: 25rem; //25vw
   }
   .robotimg {
@@ -82,7 +82,7 @@ export const Wrapper = styled.div`
       font-size: 1rem; //2vw
     }
     .vid {
-      height: auto;
+      height: 60vw;
       width: 100vw;
       padding-bottom: 1rem;
     }

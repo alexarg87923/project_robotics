@@ -26,7 +26,7 @@ function SignUp() {
         email
       });
 
-      if (response.data.success) {
+      if (response.status == 200) {
         alert('Signed up successfully!');
       } else {
         alert('Error during sign up. Please try again.');
