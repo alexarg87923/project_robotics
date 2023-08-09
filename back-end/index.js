@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 3001
 const connect_to_db = require('./database/database');
 const path = require("path")
 const bodyParser = require('body-parser');
